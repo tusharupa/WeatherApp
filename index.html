@@ -5,8 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WeatherReport</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="index.js" defer></script>
 </head>
 <body>
-    
+    <div class="header"><p class="heading">Weather App</p></div>
+    <div class="searchBar">
+        <input type="text" class="search" placeholder="Enter the Location here">
+        <button class="searchLocation material-symbols-outlined">Search</button>
+    </div>
+    <div class="information">
+    <div class="not-found">
+        <p>OOPs Invalid Location!</p>
+        <img src="images/pngtree-404-error-page-not-found-png-image_4181763.png" >
+       
+    </div>
+    <div class="weatherDiv">
+        <div class="location">
+            <span class="material-symbols-outlined locationMarker" style="font-size: 2.4rem;">Location_On</span>
+            <p class="weatherLocation"></p>
+        </div>
+        <div class="temperatureDiv">
+            <img src="" id="iconImage">
+            <p class="temperature"></p>
+            <p class="description"></p>
+        </div>
+        <div class="weatherDetails">
+            <div class="wind">
+                <span class="material-symbols-outlined" style="font-size: 3rem;">Air</span>
+            <div class="text">
+                <span class="windSpeed"></span>
+                <p>Wind Speed</p>
+            </div>
+        </div>
+        <div class="humidity">
+            <span class="material-symbols-outlined" style="font-size: 3rem;">Humidity_Percentage</span>
+        <div class="text">
+            <span class="humidityPercentage" ></span>
+            <p>Humidity</p>
+        </div>
+        </div>
+    </div>
+    </div>
+    </div>
 </body>
 </html>
