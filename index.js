@@ -13,7 +13,11 @@ submit.addEventListener('click',()=>{
 });
 
 async function loadData(city){
+    document.querySelector('.loading').classList.add('active');
+    document.querySelector('.weatherDiv').classList.add('hide');
     const weatherData = await api.getData(city);
+    document.querySelector('.weatherDiv').classList.remove('hide');
+    document.querySelector('.loading').classList.remove('active');
     renderData(weatherData);
     document.querySelector('.search').value="";
 }
