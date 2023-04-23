@@ -20,7 +20,7 @@ async function loadData(city){
 
 const api = (() =>{
 const API_KEY = '1750541b7dce4345a7d23814232004';
-const baseURL = 'http://api.weatherapi.com/v1'
+const baseURL = 'https://api.weatherapi.com/v1'
 function processData(weatherData) {
     const processedData = {
         name: weatherData.location.name,
